@@ -7,12 +7,14 @@ import { Wrapper } from './Root.styles';
 import Navigation from 'components/molecules/Navigation/Navigation';
 import WeatherList from 'components/organisms/WeatherIList/WeatherIList';
 import WeatherItem from 'components/molecules/WeatherItem/WeatherItem';
+import TopBar from 'components/molecules/TopBar/TopBar';
 
 const Root = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <MainTemplate>
+        <TopBar />
         <Navigation />
         <WeatherList />
       </MainTemplate>
