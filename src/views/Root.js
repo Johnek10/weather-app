@@ -5,15 +5,16 @@ import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import MainTemplate from 'components/templates/MainTemplate';
 import { Wrapper } from './Root.styles';
 import Navigation from 'components/molecules/Navigation/Navigation';
+import WeatherList from 'components/organisms/WeatherIList/WeatherIList';
+import WeatherItem from 'components/molecules/WeatherItem/WeatherItem';
 
 const Root = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <MainTemplate>
-        <Wrapper>
-          <Navigation />
-        </Wrapper>
+        <Navigation />
+        <WeatherList />
       </MainTemplate>
     </ThemeProvider>
   );
