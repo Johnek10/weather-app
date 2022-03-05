@@ -1,11 +1,7 @@
 import './Root.css';
 
 const Root = () => {
-  return (
-    <div>
-      <p></p>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Root;
