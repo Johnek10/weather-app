@@ -15,3 +15,32 @@ export const data = [
     humidity: '65%',
   },
 ];
+
+export const cities = [
+  {
+    name: 'Ḩeşār-e Sefīd',
+    country: 'IR',
+  },
+  {
+    name: 'Taglag',
+    country: 'IR',
+  },
+
+  {
+    name: 'Qabāghlū',
+    country: 'IR',
+  },
+
+  {
+    name: 'Arīqah',
+    country: 'SY',
+  },
+  {
+    name: 'Kalāteh-ye Dowlat',
+    country: 'IR',
+  },
+  {
+    name: 'Behjatābād',
+    country: 'IR',
+  },
+];
