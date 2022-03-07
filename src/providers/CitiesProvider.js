@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { data as coordinates } from "data/mockCity";
 
 export const CitiesContext = React.createContext({
   cities: [],
   favouriteCities: [],
-  getAllCities: () => {},
   addCity: () => {},
 });
 
@@ -30,7 +29,6 @@ const CitiesProvider = ({ children }) => {
 
   const getAllCities = () => {
     const endpoints = createRequest();
-
     Promise.all(endpoints)
       .then((responses) => {
         return Promise.all(
@@ -46,12 +44,21 @@ const CitiesProvider = ({ children }) => {
         console.log(error);
       });
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      getAllCities();
+    }, 15000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <CitiesContext.Provider
       value={{
         cities,
         favouriteCities,
-        getAllCities,
         addCity,
       }}
     >

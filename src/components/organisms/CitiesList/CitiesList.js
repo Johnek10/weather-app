@@ -4,13 +4,7 @@ import CityItem from "components/molecules/CityItem/CityItem";
 import { CitiesContext } from "providers/CitiesProvider";
 
 const CitesList = () => {
-  const { getAllCities, cities, favouriteCities } = useContext(CitiesContext);
-
-  useEffect(() => {
-    getAllCities();
-    console.log(cities);
-    console.log(favouriteCities);
-  }, []);
+  const { cities, favouriteCities, time } = useContext(CitiesContext);
 
   return (
     <WrapperList>
