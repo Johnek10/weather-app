@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { WrapperList } from "./CitiesList.styled";
 import CityItem from "components/molecules/CityItem/CityItem";
-//import { cities } from "data/mockCity";
 import { CitiesContext } from "providers/CitiesProvider";
 
 const CitesList = () => {
@@ -13,10 +12,18 @@ const CitesList = () => {
     console.log(cities);
     console.log(favouriteCities);
   }, []);
+
   return (
     <WrapperList>
-      {cities.map(({ name, country }) => {
-        return <CityItem name={name} country={country} />;
+      {cities.map(({ name, sys: { country }, main: { temp, humidity } }) => {
+        return (
+          <CityItem
+            name={name}
+            country={country}
+            temp={temp}
+            humidity={humidity}
+          />
+        );
       })}
     </WrapperList>
   );

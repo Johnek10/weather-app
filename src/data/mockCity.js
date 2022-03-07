@@ -1,27 +1,9 @@
-export const cities = [
-  {
-    city: 'Melbourne',
-    temperature: '12°C',
-    humidity: '85%',
-  },
-  {
-    city: 'Lisbon',
-    temperature: '18°C',
-    humidity: '75%',
-  },
-  {
-    city: 'Porto',
-    temperature: '14°C',
-    humidity: '65%',
-  },
-];
-
 export const data = [
   {
     id: 833,
-    name: 'Ḩeşār-e Sefīd',
-    state: '',
-    country: 'IR',
+    name: "Ḩeşār-e Sefīd",
+    state: "",
+    country: "IR",
     coord: {
       lon: 47.159401,
       lat: 34.330502,
@@ -29,9 +11,9 @@ export const data = [
   },
   {
     id: 2960,
-    name: '‘Ayn Ḩalāqīm',
-    state: '',
-    country: 'SY',
+    name: "‘Ayn Ḩalāqīm",
+    state: "",
+    country: "SY",
     coord: {
       lon: 36.321911,
       lat: 34.940079,
@@ -39,9 +21,9 @@ export const data = [
   },
   {
     id: 3245,
-    name: 'Taglag',
-    state: '',
-    country: 'IR',
+    name: "Taglag",
+    state: "",
+    country: "IR",
     coord: {
       lon: 44.98333,
       lat: 38.450001,
@@ -49,9 +31,9 @@ export const data = [
   },
   {
     id: 3530,
-    name: 'Qabāghlū',
-    state: '',
-    country: 'IR',
+    name: "Qabāghlū",
+    state: "",
+    country: "IR",
     coord: {
       lon: 46.168499,
       lat: 36.173302,
@@ -59,9 +41,9 @@ export const data = [
   },
   {
     id: 5174,
-    name: '‘Arīqah',
-    state: '',
-    country: 'SY',
+    name: "‘Arīqah",
+    state: "",
+    country: "SY",
     coord: {
       lon: 36.48336,
       lat: 32.889809,
@@ -69,9 +51,9 @@ export const data = [
   },
   {
     id: 7264,
-    name: 'Kalāteh-ye Dowlat',
-    state: '',
-    country: 'IR',
+    name: "Kalāteh-ye Dowlat",
+    state: "",
+    country: "IR",
     coord: {
       lon: 57.616982,
       lat: 36.163841,
@@ -79,9 +61,9 @@ export const data = [
   },
   {
     id: 8084,
-    name: 'Behjatābād',
-    state: '',
-    country: 'IR',
+    name: "Behjatābād",
+    state: "",
+    country: "IR",
     coord: {
       lon: 51.461639,
       lat: 36.667431,
@@ -89,9 +71,9 @@ export const data = [
   },
   {
     id: 9874,
-    name: 'Ţālesh Maḩalleh',
-    state: '',
-    country: 'IR',
+    name: "Ţālesh Maḩalleh",
+    state: "",
+    country: "IR",
     coord: {
       lon: 50.679192,
       lat: 36.894329,
@@ -99,9 +81,9 @@ export const data = [
   },
   {
     id: 11263,
-    name: 'Shahrīār Kandeh',
-    state: '',
-    country: 'IR',
+    name: "Shahrīār Kandeh",
+    state: "",
+    country: "IR",
     coord: {
       lon: 53.19902,
       lat: 36.631939,
@@ -109,9 +91,9 @@ export const data = [
   },
   {
     id: 11754,
-    name: 'Bālā Aḩmad Kolā',
-    state: '',
-    country: 'IR',
+    name: "Bālā Aḩmad Kolā",
+    state: "",
+    country: "IR",
     coord: {
       lon: 52.667271,
       lat: 36.649059,
@@ -119,9 +101,9 @@ export const data = [
   },
   {
     id: 12795,
-    name: 'Aş Şūrah aş Şaghīrah',
-    state: '',
-    country: 'SY',
+    name: "Aş Şūrah aş Şaghīrah",
+    state: "",
+    country: "SY",
     coord: {
       lon: 36.573872,
       lat: 33.032669,
@@ -129,9 +111,9 @@ export const data = [
   },
   {
     id: 14177,
-    name: 'Āqdūz',
-    state: '',
-    country: 'IR',
+    name: "Āqdūz",
+    state: "",
+    country: "IR",
     coord: {
       lon: 44.26556,
       lat: 39.197498,
@@ -139,9 +121,9 @@ export const data = [
   },
   {
     id: 14256,
-    name: 'Āzādshahr',
-    state: '',
-    country: 'IR',
+    name: "Āzādshahr",
+    state: "",
+    country: "IR",
     coord: {
       lon: 48.570728,
       lat: 34.790878,
@@ -149,9 +131,9 @@ export const data = [
   },
   {
     id: 18007,
-    name: 'Gollar',
-    state: '',
-    country: 'IR',
+    name: "Gollar",
+    state: "",
+    country: "IR",
     coord: {
       lon: 46.25,
       lat: 37.383331,
@@ -159,9 +141,9 @@ export const data = [
   },
   {
     id: 18093,
-    name: 'Dīgāleh',
-    state: '',
-    country: 'IR',
+    name: "Dīgāleh",
+    state: "",
+    country: "IR",
     coord: {
       lon: 45.106998,
       lat: 37.552502,
@@ -169,9 +151,9 @@ export const data = [
   },
   {
     id: 18557,
-    name: 'Qarālar-e Mīrzā Ḩoseynqolī',
-    state: '',
-    country: 'IR',
+    name: "Qarālar-e Mīrzā Ḩoseynqolī",
+    state: "",
+    country: "IR",
     coord: {
       lon: 45.067501,
       lat: 37.674702,
@@ -179,9 +161,9 @@ export const data = [
   },
   {
     id: 18918,
-    name: 'Protaras',
-    state: '',
-    country: 'CY',
+    name: "Protaras",
+    state: "",
+    country: "CY",
     coord: {
       lon: 34.058331,
       lat: 35.012501,
@@ -189,9 +171,9 @@ export const data = [
   },
   {
     id: 23814,
-    name: 'Kahrīz',
-    state: '',
-    country: 'IR',
+    name: "Kahrīz",
+    state: "",
+    country: "IR",
     coord: {
       lon: 47.055302,
       lat: 34.383801,
@@ -199,9 +181,9 @@ export const data = [
   },
   {
     id: 24851,
-    name: 'Nūrābād',
-    state: '',
-    country: 'IR',
+    name: "Nūrābād",
+    state: "",
+    country: "IR",
     coord: {
       lon: 47.9725,
       lat: 34.073399,
@@ -209,9 +191,9 @@ export const data = [
   },
   {
     id: 29033,
-    name: 'Rokan Sarā',
-    state: '',
-    country: 'IR',
+    name: "Rokan Sarā",
+    state: "",
+    country: "IR",
     coord: {
       lon: 49.608101,
       lat: 37.32085,
@@ -219,9 +201,9 @@ export const data = [
   },
   {
     id: 30321,
-    name: 'Zīrjān',
-    state: '',
-    country: 'IR',
+    name: "Zīrjān",
+    state: "",
+    country: "IR",
     coord: {
       lon: 58.43586,
       lat: 34.214401,
@@ -229,9 +211,9 @@ export const data = [
   },
   {
     id: 30485,
-    name: 'Dahasuways',
-    state: '',
-    country: 'YE',
+    name: "Dahasuways",
+    state: "",
+    country: "YE",
     coord: {
       lon: 50.729439,
       lat: 15.72389,
@@ -239,9 +221,9 @@ export const data = [
   },
   {
     id: 30490,
-    name: 'Ash Shihr',
-    state: '',
-    country: 'YE',
+    name: "Ash Shihr",
+    state: "",
+    country: "YE",
     coord: {
       lon: 49.606392,
       lat: 14.75863,
@@ -249,9 +231,9 @@ export const data = [
   },
   {
     id: 30543,
-    name: 'Al Ghaylah',
-    state: '',
-    country: 'YE',
+    name: "Al Ghaylah",
+    state: "",
+    country: "YE",
     coord: {
       lon: 45.583328,
       lat: 14.59583,
@@ -259,9 +241,9 @@ export const data = [
   },
   {
     id: 30616,
-    name: 'Judaydah',
-    state: '',
-    country: 'YE',
+    name: "Judaydah",
+    state: "",
+    country: "YE",
     coord: {
       lon: 45.299622,
       lat: 15.07512,
@@ -269,9 +251,9 @@ export const data = [
   },
   {
     id: 30689,
-    name: 'Dawran',
-    state: '',
-    country: 'YE',
+    name: "Dawran",
+    state: "",
+    country: "YE",
     coord: {
       lon: 44.441959,
       lat: 13.77436,
@@ -279,9 +261,9 @@ export const data = [
   },
   {
     id: 30696,
-    name: 'Najd al Jumai',
-    state: '',
-    country: 'YE',
+    name: "Najd al Jumai",
+    state: "",
+    country: "YE",
     coord: {
       lon: 44.324139,
       lat: 13.91581,
@@ -289,9 +271,9 @@ export const data = [
   },
   {
     id: 30714,
-    name: 'Zalmat al Alya',
-    state: '',
-    country: 'YE',
+    name: "Zalmat al Alya",
+    state: "",
+    country: "YE",
     coord: {
       lon: 44.09404,
       lat: 14.1023,
@@ -299,9 +281,9 @@ export const data = [
   },
   {
     id: 30729,
-    name: 'Suq ar Rabu',
-    state: '',
-    country: 'YE',
+    name: "Suq ar Rabu",
+    state: "",
+    country: "YE",
     coord: {
       lon: 44.01511,
       lat: 14.51155,
@@ -309,9 +291,9 @@ export const data = [
   },
   {
     id: 30735,
-    name: 'Ash Shuqayrah',
-    state: '',
-    country: 'YE',
+    name: "Ash Shuqayrah",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.786362,
       lat: 13.13452,
@@ -319,9 +301,9 @@ export const data = [
   },
   {
     id: 30740,
-    name: 'Mashraah',
-    state: '',
-    country: 'YE',
+    name: "Mashraah",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.99588,
       lat: 13.53235,
@@ -329,9 +311,9 @@ export const data = [
   },
   {
     id: 30748,
-    name: 'Ar Rawnah',
-    state: '',
-    country: 'YE',
+    name: "Ar Rawnah",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.80286,
       lat: 13.75638,
@@ -339,9 +321,9 @@ export const data = [
   },
   {
     id: 30762,
-    name: 'Ar Ramadi',
-    state: '',
-    country: 'YE',
+    name: "Ar Ramadi",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.784569,
       lat: 13.95641,
@@ -349,9 +331,9 @@ export const data = [
   },
   {
     id: 30777,
-    name: 'Al Ahad',
-    state: '',
-    country: 'YE',
+    name: "Al Ahad",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.64167,
       lat: 14.25833,
@@ -359,9 +341,9 @@ export const data = [
   },
   {
     id: 30788,
-    name: 'Ad Dil',
-    state: '',
-    country: 'YE',
+    name: "Ad Dil",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.818279,
       lat: 14.67199,
@@ -369,9 +351,9 @@ export const data = [
   },
   {
     id: 30789,
-    name: 'Al Jabin',
-    state: '',
-    country: 'YE',
+    name: "Al Jabin",
+    state: "",
+    country: "YE",
     coord: {
       lon: 43.599041,
       lat: 14.70401,
@@ -379,9 +361,9 @@ export const data = [
   },
   {
     id: 32516,
-    name: 'Badrābād-e `Olyā',
-    state: '',
-    country: 'IR',
+    name: "Badrābād-e `Olyā",
+    state: "",
+    country: "IR",
     coord: {
       lon: 48.279442,
       lat: 33.42944,
@@ -389,9 +371,9 @@ export const data = [
   },
   {
     id: 32723,
-    name: 'Īstgāh-e Rāh Āhan-e Garmsār',
-    state: '',
-    country: 'IR',
+    name: "Īstgāh-e Rāh Āhan-e Garmsār",
+    state: "",
+    country: "IR",
     coord: {
       lon: 52.309422,
       lat: 35.23455,
@@ -399,9 +381,9 @@ export const data = [
   },
   {
     id: 32767,
-    name: 'Qarchak',
-    state: '',
-    country: 'IR',
+    name: "Qarchak",
+    state: "",
+    country: "IR",
     coord: {
       lon: 51.56889,
       lat: 35.439442,

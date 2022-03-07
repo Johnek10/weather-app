@@ -22,8 +22,8 @@ const Root = () => {
             <TopBar />
             <Navigation />
             <Routes>
-              <Route path="/" element={<WeatherList />}></Route>
-              <Route path="/cities" element={<Cities />}></Route>
+              <Route path="/" element={<Cities />}></Route>
+              <Route path="/weather" element={<WeatherList />}></Route>
               <Route path="/favourites" element={<Favourites />}></Route>
             </Routes>
           </CitiesProvider>

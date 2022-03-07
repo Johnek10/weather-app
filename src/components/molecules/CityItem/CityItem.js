@@ -5,14 +5,16 @@ import { CitiesContext } from "providers/CitiesProvider";
 import { AddButtonStyle } from "components/atoms/AddButton/AddButton.styled";
 import { ReactComponent as AddIcon } from "assets/icons/Add_icon.svg";
 
-const CityItem = ({ name, country }) => {
+const CityItem = ({ name, country, temp, humidity }) => {
   const { addCity } = useContext(CitiesContext);
 
   return (
     <Wrapper>
       <p>{name}</p>
       <p>{country}</p>
-      <AddButtonStyle onClick={() => addCity({ name, country })}>
+      <AddButtonStyle
+        onClick={() => addCity({ name, country, temp, humidity })}
+      >
         <AddIcon />
       </AddButtonStyle>
     </Wrapper>

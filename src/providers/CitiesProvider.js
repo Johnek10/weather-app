@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "data/mockCity";
+import { data as coordinates } from "data/mockCity";
 
 export const CitiesContext = React.createContext({
   cities: [],
@@ -15,7 +15,7 @@ const CitiesProvider = ({ children }) => {
     const request = [];
     for (let {
       coord: { lat, lon },
-    } of data) {
+    } of coordinates) {
       request.push(
         fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_TOKEN}`
@@ -55,6 +55,7 @@ const CitiesProvider = ({ children }) => {
         addCity,
       }}
     >
+      {console.log(cities)}
       {children}
     </CitiesContext.Provider>
   );

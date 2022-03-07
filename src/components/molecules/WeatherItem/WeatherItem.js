@@ -1,12 +1,13 @@
-import { Button } from 'components/atoms/Button/Button.styles';
-import React from 'react';
+import { Button } from "components/atoms/Button/Button.styles";
+import React from "react";
 import {
   Wrapper,
   StyledData,
   StyledHeader,
   StyledInformation,
-} from './WeatherItem.styles';
+} from "./WeatherItem.styles";
 
+//temp, humidity
 const WeatherItem = ({ city, temp, humidity }) => {
   return (
     <Wrapper>
