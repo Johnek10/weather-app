@@ -1,5 +1,5 @@
-import React from 'react';
-import { LinkWrapper } from './Link.styles';
+import React from "react";
+import { LinkWrapper } from "./Link.styles";
 const Link = ({ text }) => {
   return <LinkWrapper>{text}</LinkWrapper>;
 };

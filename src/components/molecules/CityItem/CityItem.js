@@ -1,13 +1,22 @@
-import React from 'react';
-import AddButton from 'components/atoms/AddButton/AddButton';
-import { Wrapper } from './CityItem.styled';
+import React, { useContext } from "react";
+import AddButton from "components/atoms/AddButton/AddButton";
+import { Wrapper } from "./CityItem.styled";
+import { CitiesContext } from "providers/CitiesProvider";
+import { AddButtonStyle } from "components/atoms/AddButton/AddButton.styled";
+import { ReactComponent as AddIcon } from "assets/icons/Add_icon.svg";
 
-const CityItem = ({ name, country }) => (
-  <Wrapper>
-    <p>{name}</p>
-    <p>{country}</p>
-    <AddButton />
-  </Wrapper>
-);
+const CityItem = ({ name, country }) => {
+  const { addCity } = useContext(CitiesContext);
+
+  return (
+    <Wrapper>
+      <p>{name}</p>
+      <p>{country}</p>
+      <AddButtonStyle onClick={() => addCity({ name, country })}>
+        <AddIcon />
+      </AddButtonStyle>
+    </Wrapper>
+  );
+};
 
 export default CityItem;

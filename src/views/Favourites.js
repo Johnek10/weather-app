@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
+import FavouritesList from "components/organisms/FavouritiesList/FavouritiesList";
 
-const Favourites = () => {};
+const Favourites = () => <FavouritesList />;
 
 export default Favourites;
