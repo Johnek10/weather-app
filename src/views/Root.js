@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { theme } from "assets/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "assets/styles/GlobalStyle";
 import MainTemplate from "components/templates/MainTemplate";
-import { Wrapper } from "./Root.styles";
 import Navigation from "components/molecules/Navigation/Navigation";
 import WeatherList from "components/organisms/WeatherIList/WeatherIList";
 import TopBar from "components/molecules/TopBar/TopBar";

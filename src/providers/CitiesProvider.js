@@ -55,7 +55,6 @@ const CitiesProvider = ({ children }) => {
         addCity,
       }}
     >
-      {console.log(cities)}
       {children}
     </CitiesContext.Provider>
   );

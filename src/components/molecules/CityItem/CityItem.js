@@ -7,7 +7,6 @@ import { ReactComponent as AddIcon } from "assets/icons/Add_icon.svg";
 
 const CityItem = ({ name, country, temp, humidity }) => {
   const { addCity } = useContext(CitiesContext);
-
   return (
     <Wrapper>
       <p>{name}</p>

@@ -5,7 +5,6 @@ import { CitiesContext } from "providers/CitiesProvider";
 
 const CitesList = () => {
   const { getAllCities, cities, favouriteCities } = useContext(CitiesContext);
-  //const [city, setCity]=([]);
 
   useEffect(() => {
     getAllCities();

@@ -1,4 +1,4 @@
-import { Button } from "components/atoms/Button/Button.styles";
+import { ChartButton } from "components/atoms/Button/Button.styles";
 import React from "react";
 import {
   Wrapper,
@@ -6,9 +6,19 @@ import {
   StyledHeader,
   StyledInformation,
 } from "./WeatherItem.styles";
+import { useModal } from "hooks/useModal";
 
-//temp, humidity
+const InitialData = ({ temp, humidity }) => {
+  return (
+    <div>
+      <p>{temp}</p>
+      <p>{humidity}</p>
+    </div>
+  );
+};
+
 const WeatherItem = ({ city, temp, humidity }) => {
+  const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal();
   return (
     <Wrapper>
       <StyledData>
@@ -28,7 +38,12 @@ const WeatherItem = ({ city, temp, humidity }) => {
         <StyledHeader>Humidity</StyledHeader>
         <p>{humidity}</p>
       </StyledInformation>
-      <Button>Show Chart</Button>
+      <ChartButton onClick={handleOpenModal}>Show Chart</ChartButton>
+      {isOpen ? (
+        <Modal handleClose={handleCloseModal}>
+          <InitialData temp={temp} humidity={humidity} />
+        </Modal>
+      ) : null}
     </Wrapper>
   );
 };

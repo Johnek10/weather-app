@@ -1,6 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  grid-column-start: 2;
+  grid-column-end: 3;
   display: flex;
   justify-content: space-around;
   width: 100%;

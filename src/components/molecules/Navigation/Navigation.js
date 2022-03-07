@@ -1,20 +1,14 @@
 import React from "react";
 import Link from "components/atoms/Link";
 import { Wrapper } from "./Navigation.styles";
-import { Link as LinkRouter } from "react-router-dom";
+import { StyledLink } from "components/atoms/Link.styles";
 
 const Navigation = () => {
   return (
     <Wrapper>
-      <LinkRouter to="/favourites">
-        <Link text={"Favourites Cities"}></Link>
-      </LinkRouter>
-      <LinkRouter to="/">
-        <Link text={"All Cities"}></Link>
-      </LinkRouter>
-      <LinkRouter to="/weather">
-        <Link text={"Actual weather"}></Link>
-      </LinkRouter>
+      <StyledLink to="/favourites">Favourites Cities</StyledLink>
+      <StyledLink to="/">All Cities</StyledLink>
+      <StyledLink to="/weather">Actual weather</StyledLink>
     </Wrapper>
   );
 };

@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  grid-column-start: 2;
+  grid-column-end: 3;
   width: 100%;
   padding: 1.5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
