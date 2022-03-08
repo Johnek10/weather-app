@@ -1,23 +1,49 @@
 import { ChartButton } from "components/atoms/Button/Button.styles";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Wrapper,
   StyledData,
   StyledHeader,
   StyledInformation,
 } from "./WeatherItem.styles";
+import { convertTime } from "assets/utils/helpersFunction";
 import { useModal } from "hooks/useModal";
+import Chart from "data/Chart";
 
-const InitialData = ({ temp, humidity }) => {
+const InitialData = ({ time, temp }) => {
+  const [timeData, setTimeData] = useState([]);
+  const [diagramData, setDiagramData] = useState({
+    labels: [],
+    datasets: [],
+  });
+  const [temperature, setTemperature] = useState([temp]);
+
+  useEffect(() => {
+    const hourMinute = convertTime(time);
+    setTimeData([hourMinute]);
+  }, []);
+
+  useEffect(() => {
+    setDiagramData({
+      labels: timeData,
+      datasets: [
+        {
+          label: "Temperature",
+          data: temperature,
+        },
+      ],
+    });
+  }, [timeData]);
+
   return (
     <div>
-      <p>{temp}</p>
-      <p>{humidity}</p>
+      <p>Temperature</p>
+      <Chart chartData={diagramData} />
     </div>
   );
 };
 
-const WeatherItem = ({ city, temp, humidity }) => {
+const WeatherItem = ({ city, temp, humidity, time }) => {
   const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal();
   return (
     <Wrapper>
@@ -32,16 +58,16 @@ const WeatherItem = ({ city, temp, humidity }) => {
       </StyledInformation>
       <StyledInformation>
         <StyledHeader>Temperature</StyledHeader>
-        <p>{temp}</p>
+        <p>{temp} °C</p>
       </StyledInformation>
       <StyledInformation>
         <StyledHeader>Humidity</StyledHeader>
-        <p>{humidity}</p>
+        <p>{humidity} %</p>
       </StyledInformation>
       <ChartButton onClick={handleOpenModal}>Show Chart</ChartButton>
       {isOpen ? (
         <Modal handleClose={handleCloseModal}>
-          <InitialData temp={temp} humidity={humidity} />
+          <InitialData time={time} temp={temp} />
         </Modal>
       ) : null}
     </Wrapper>

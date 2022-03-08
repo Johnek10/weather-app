@@ -5,10 +5,10 @@ export const ModalWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  /*  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   min-width: 600px;
   min-height: 600px;
   background-color: white;

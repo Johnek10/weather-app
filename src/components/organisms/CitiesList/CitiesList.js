@@ -4,20 +4,23 @@ import CityItem from "components/molecules/CityItem/CityItem";
 import { CitiesContext } from "providers/CitiesProvider";
 
 const CitesList = () => {
-  const { cities, favouriteCities, time } = useContext(CitiesContext);
+  const { cities, favouriteCities } = useContext(CitiesContext);
 
   return (
     <WrapperList>
-      {cities.map(({ name, sys: { country }, main: { temp, humidity } }) => {
-        return (
-          <CityItem
-            name={name}
-            country={country}
-            temp={temp}
-            humidity={humidity}
-          />
-        );
-      })}
+      {cities.map(
+        ({ name, dt, sys: { country }, main: { temp, humidity } }) => {
+          return (
+            <CityItem
+              name={name}
+              country={country}
+              temp={temp}
+              humidity={humidity}
+              dt={dt}
+            />
+          );
+        }
+      )}
     </WrapperList>
   );
 };
