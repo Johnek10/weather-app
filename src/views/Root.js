@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cities from "./Cities";
 import CitiesProvider from "providers/CitiesProvider";
 import Favourites from "./Favourites";
+import Login from "./Login";
+import { AuthProvider } from "providers/AuthProvider";
 
 const Root = () => {
   return (
@@ -17,15 +19,17 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <MainTemplate>
-          <CitiesProvider>
-            <TopBar />
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Cities />}></Route>
-              <Route path="/weather" element={<WeatherList />}></Route>
-              <Route path="/favourites" element={<Favourites />}></Route>
-            </Routes>
-          </CitiesProvider>
+          <AuthProvider>
+            <CitiesProvider>
+              <TopBar />
+              <Navigation />
+              <Routes>
+                <Route path="/" element={<Cities />}></Route>
+                <Route path="/weather" element={<WeatherList />}></Route>
+                <Route path="/favourites" element={<Favourites />}></Route>
+              </Routes>
+            </CitiesProvider>
+          </AuthProvider>
         </MainTemplate>
       </ThemeProvider>
     </BrowserRouter>

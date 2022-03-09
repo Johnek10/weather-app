@@ -1,7 +1,7 @@
-import React from 'react';
-import SignOut from 'components/atoms/SignOut/SignOut';
-import { Wrapper } from './TopBar.styles';
-import { Title } from './TopBar.styles';
+import React from "react";
+import SignOut from "components/molecules/SignOut/SignOut";
+import { Wrapper } from "./TopBar.styles";
+import { Title } from "./TopBar.styles";
 
 const TopBar = () => {
   return (
