@@ -5,12 +5,17 @@ export const ModalWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; */
   min-width: 600px;
   min-height: 600px;
   background-color: white;
   border-radius: 20px;
+
+  button {
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 2rem;
+    width: 6rem;
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.pink};
+  }
 `;

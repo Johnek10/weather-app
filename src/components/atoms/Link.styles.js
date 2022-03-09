@@ -26,4 +26,8 @@ export const StyledLink = styled(LinkRouter).attrs({
   :hover {
     background-color: ${({ theme }) => theme.colors.pink};
   }
+
+  @media (max-width: 992px) {
+    margin: 0.5rem;
+  }
 `;

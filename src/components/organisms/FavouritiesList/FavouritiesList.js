@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CitiesContext } from "providers/CitiesProvider";
 import { WrapperList } from "../CitiesList/CitiesList.styled";
-import CityItem from "components/molecules/CityItem/CityItem";
+import FavouriteItem from "components/molecules/FavouriteItem/FavouriteItem";
 
 const FavouritesList = () => {
   const { favouriteCities } = useContext(CitiesContext);
@@ -9,7 +9,7 @@ const FavouritesList = () => {
   return (
     <WrapperList>
       {favouriteCities.map(({ name, country }) => {
-        return <CityItem name={name} country={country} />;
+        return <FavouriteItem name={name} country={country} />;
       })}
     </WrapperList>
   );

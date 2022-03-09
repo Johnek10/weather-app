@@ -1,5 +1,5 @@
 import { ChartButton } from "components/atoms/Button/Button.styles";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import {
   Wrapper,
   StyledData,
@@ -9,6 +9,7 @@ import {
 import { convertTime } from "assets/utils/helpersFunction";
 import { useModal } from "hooks/useModal";
 import Chart from "data/Chart";
+import { ModalWrapper } from "./WeatherItem.styles";
 
 const InitialData = ({ time, temp }) => {
   const [timeData, setTimeData] = useState([]);
@@ -36,10 +37,10 @@ const InitialData = ({ time, temp }) => {
   }, [timeData]);
 
   return (
-    <div>
-      <p>Temperature</p>
+    <ModalWrapper>
+      <p>Temperature diagram</p>
       <Chart chartData={diagramData} />
-    </div>
+    </ModalWrapper>
   );
 };
 
@@ -47,11 +48,6 @@ const WeatherItem = ({ city, temp, humidity, time }) => {
   const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal();
   return (
     <Wrapper>
-      <StyledData>
-        <StyledHeader>Date</StyledHeader>
-        <p>Sunday</p>
-        <p>Aug 31th 2022</p>
-      </StyledData>
       <StyledInformation>
         <StyledHeader>City</StyledHeader>
         <p>{city}</p>

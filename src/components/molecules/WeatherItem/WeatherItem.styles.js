@@ -1,5 +1,5 @@
-import { theme } from 'assets/theme';
-import styled from 'styled-components';
+import { theme } from "assets/theme";
+import styled from "styled-components";
 
 export const Wrapper = styled.li`
   display: flex;
@@ -35,4 +35,13 @@ export const StyledInformation = styled.div`
 export const StyledHeader = styled.p`
   font-weight: 200;
   font-size: ${({ theme }) => theme.fontSize.smallOne};
+`;
+
+export const ModalWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    width: fit-content;
+  }
 `;

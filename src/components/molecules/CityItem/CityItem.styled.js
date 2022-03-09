@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.li`
   display: flex;
@@ -8,4 +8,7 @@ export const Wrapper = styled.li`
   border-radius: 40px;
   background-color: ${({ theme }) => theme.colors.lightBlue};
   margin-bottom: 2rem;
+  p {
+    width: 12rem;
+  }
 `;
