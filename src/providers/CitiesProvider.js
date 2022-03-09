@@ -47,12 +47,12 @@ const CitiesProvider = ({ children }) => {
 
   useEffect(() => {
     getAllCities();
-    /*   const intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
       getAllCities();
-    }, 8000);
+    }, 60000);
     return () => {
       clearInterval(intervalId);
-    }; */
+    };
   }, []);
 
   return (

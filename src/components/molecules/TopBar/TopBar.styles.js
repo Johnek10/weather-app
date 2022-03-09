@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.large};
-  margin-right: 60px;
   text-transform: uppercase;
   letter-spacing: -2px;
+  margin-left: 28rem;
 `;
