@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    blue: "#7DAEFB",
+    blue: "#19131c",
     lightBlue: "#D9DBF1",
     pink: "#F04265",
     yellow: "#F0E100",

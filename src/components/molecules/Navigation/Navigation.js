@@ -5,8 +5,7 @@ import { StyledLink } from "components/atoms/Link.styles";
 const Navigation = () => {
   return (
     <Wrapper>
-      <StyledLink to="/favourites">Favourites Cities</StyledLink>
-      <StyledLink to="/">All Cities</StyledLink>
+      <StyledLink to="/">Cities</StyledLink>
       <StyledLink to="/weather">Actual weather</StyledLink>
     </Wrapper>
   );

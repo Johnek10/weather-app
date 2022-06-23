@@ -1,17 +1,7 @@
 export const data = [
   {
-    id: 833,
-    name: "Ḩeşār-e Sefīd",
-    state: "",
-    country: "IR",
-    coord: {
-      lon: 47.159401,
-      lat: 34.330502,
-    },
-  },
-  {
     id: 2960,
-    name: "‘Ayn Ḩalāqīm",
+    name: "1",
     state: "",
     country: "SY",
     coord: {
@@ -20,8 +10,19 @@ export const data = [
     },
   },
   {
+    id: 833,
+    name: "0",
+    state: "",
+    country: "IR",
+    coord: {
+      lon: 47.159401,
+      lat: 34.330502,
+    },
+  },
+
+  {
     id: 3245,
-    name: "Taglag",
+    name: "2",
     state: "",
     country: "IR",
     coord: {
@@ -31,7 +32,7 @@ export const data = [
   },
   {
     id: 3530,
-    name: "Qabāghlū",
+    name: "3",
     state: "",
     country: "IR",
     coord: {
@@ -41,7 +42,7 @@ export const data = [
   },
   {
     id: 5174,
-    name: "‘Arīqah",
+    name: "4",
     state: "",
     country: "SY",
     coord: {
@@ -51,7 +52,7 @@ export const data = [
   },
   {
     id: 7264,
-    name: "Kalāteh-ye Dowlat",
+    name: "5",
     state: "",
     country: "IR",
     coord: {
@@ -61,7 +62,7 @@ export const data = [
   },
   {
     id: 8084,
-    name: "Behjatābād",
+    name: "6",
     state: "",
     country: "IR",
     coord: {
@@ -71,7 +72,7 @@ export const data = [
   },
   {
     id: 9874,
-    name: "Ţālesh Maḩalleh",
+    name: "7",
     state: "",
     country: "IR",
     coord: {
@@ -81,7 +82,7 @@ export const data = [
   },
   {
     id: 11263,
-    name: "Shahrīār Kandeh",
+    name: "8",
     state: "",
     country: "IR",
     coord: {
@@ -91,7 +92,7 @@ export const data = [
   },
   {
     id: 11754,
-    name: "Bālā Aḩmad Kolā",
+    name: "9",
     state: "",
     country: "IR",
     coord: {
@@ -101,7 +102,7 @@ export const data = [
   },
   {
     id: 12795,
-    name: "Aş Şūrah aş Şaghīrah",
+    name: "10",
     state: "",
     country: "SY",
     coord: {
@@ -111,7 +112,7 @@ export const data = [
   },
   {
     id: 14177,
-    name: "Āqdūz",
+    name: "11",
     state: "",
     country: "IR",
     coord: {
@@ -121,7 +122,7 @@ export const data = [
   },
   {
     id: 14256,
-    name: "Āzādshahr",
+    name: "12",
     state: "",
     country: "IR",
     coord: {
@@ -131,7 +132,7 @@ export const data = [
   },
   {
     id: 18007,
-    name: "Gollar",
+    name: "13",
     state: "",
     country: "IR",
     coord: {
@@ -141,7 +142,7 @@ export const data = [
   },
   {
     id: 18093,
-    name: "Dīgāleh",
+    name: "14",
     state: "",
     country: "IR",
     coord: {
@@ -151,7 +152,7 @@ export const data = [
   },
   {
     id: 18557,
-    name: "Qarālar-e Mīrzā Ḩoseynqolī",
+    name: "15",
     state: "",
     country: "IR",
     coord: {
@@ -161,7 +162,7 @@ export const data = [
   },
   {
     id: 18918,
-    name: "Protaras",
+    name: "16",
     state: "",
     country: "CY",
     coord: {
@@ -171,7 +172,7 @@ export const data = [
   },
   {
     id: 23814,
-    name: "Kahrīz",
+    name: "17",
     state: "",
     country: "IR",
     coord: {
@@ -181,7 +182,7 @@ export const data = [
   },
   {
     id: 24851,
-    name: "Nūrābād",
+    name: "18",
     state: "",
     country: "IR",
     coord: {
@@ -191,7 +192,7 @@ export const data = [
   },
   {
     id: 29033,
-    name: "Rokan Sarā",
+    name: "19",
     state: "",
     country: "IR",
     coord: {
@@ -201,7 +202,7 @@ export const data = [
   },
   {
     id: 30321,
-    name: "Zīrjān",
+    name: "20",
     state: "",
     country: "IR",
     coord: {
@@ -211,7 +212,7 @@ export const data = [
   },
   {
     id: 30485,
-    name: "Dahasuways",
+    name: "21",
     state: "",
     country: "YE",
     coord: {
@@ -221,7 +222,7 @@ export const data = [
   },
   {
     id: 30490,
-    name: "Ash Shihr",
+    name: "22",
     state: "",
     country: "YE",
     coord: {
@@ -231,7 +232,7 @@ export const data = [
   },
   {
     id: 30543,
-    name: "Al Ghaylah",
+    name: "23",
     state: "",
     country: "YE",
     coord: {
@@ -241,152 +242,12 @@ export const data = [
   },
   {
     id: 30616,
-    name: "Judaydah",
+    name: "24",
     state: "",
     country: "YE",
     coord: {
       lon: 45.299622,
       lat: 15.07512,
-    },
-  },
-  {
-    id: 30689,
-    name: "Dawran",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 44.441959,
-      lat: 13.77436,
-    },
-  },
-  {
-    id: 30696,
-    name: "Najd al Jumai",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 44.324139,
-      lat: 13.91581,
-    },
-  },
-  {
-    id: 30714,
-    name: "Zalmat al Alya",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 44.09404,
-      lat: 14.1023,
-    },
-  },
-  {
-    id: 30729,
-    name: "Suq ar Rabu",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 44.01511,
-      lat: 14.51155,
-    },
-  },
-  {
-    id: 30735,
-    name: "Ash Shuqayrah",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.786362,
-      lat: 13.13452,
-    },
-  },
-  {
-    id: 30740,
-    name: "Mashraah",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.99588,
-      lat: 13.53235,
-    },
-  },
-  {
-    id: 30748,
-    name: "Ar Rawnah",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.80286,
-      lat: 13.75638,
-    },
-  },
-  {
-    id: 30762,
-    name: "Ar Ramadi",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.784569,
-      lat: 13.95641,
-    },
-  },
-  {
-    id: 30777,
-    name: "Al Ahad",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.64167,
-      lat: 14.25833,
-    },
-  },
-  {
-    id: 30788,
-    name: "Ad Dil",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.818279,
-      lat: 14.67199,
-    },
-  },
-  {
-    id: 30789,
-    name: "Al Jabin",
-    state: "",
-    country: "YE",
-    coord: {
-      lon: 43.599041,
-      lat: 14.70401,
-    },
-  },
-  {
-    id: 32516,
-    name: "Badrābād-e `Olyā",
-    state: "",
-    country: "IR",
-    coord: {
-      lon: 48.279442,
-      lat: 33.42944,
-    },
-  },
-  {
-    id: 32723,
-    name: "Īstgāh-e Rāh Āhan-e Garmsār",
-    state: "",
-    country: "IR",
-    coord: {
-      lon: 52.309422,
-      lat: 35.23455,
-    },
-  },
-  {
-    id: 32767,
-    name: "Qarchak",
-    state: "",
-    country: "IR",
-    coord: {
-      lon: 51.56889,
-      lat: 35.439442,
     },
   },
 ];

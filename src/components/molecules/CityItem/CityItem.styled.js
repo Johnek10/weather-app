@@ -8,6 +8,12 @@ export const Wrapper = styled.li`
   border-radius: 40px;
   background-color: ${({ theme }) => theme.colors.lightBlue};
   margin-bottom: 2rem;
+  border: ${({ isOpen }) => {
+    /*  {
+      console.log(isOpen);
+    } */
+    return isOpen ? "2px solid red" : "";
+  }};
   p {
     width: 12rem;
   }

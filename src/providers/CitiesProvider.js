@@ -2,64 +2,25 @@ import React, { useEffect, useState } from "react";
 import { data as coordinates } from "data/mockCity";
 
 export const CitiesContext = React.createContext({
-  cities: [],
-  favouriteCities: [],
+  citiesCheckedCoord: [],
   addCity: () => {},
 });
 
 const CitiesProvider = ({ children }) => {
-  const [cities, setCities] = useState([]);
-  const [favouriteCities, setFavouriteCities] = useState([]);
-  const createRequest = () => {
-    const request = [];
-    for (let {
-      coord: { lat, lon },
-    } of coordinates) {
-      request.push(
-        fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_TOKEN}`
-        )
-      );
-    }
-    return request;
-  };
+  const [citiesCheckedCoord, setCitiesCheckedCoord] = useState([]); //retrieve coordinates from checked cities
+
   const addCity = (value) => {
-    setFavouriteCities([value, ...favouriteCities]);
+    setCitiesCheckedCoord([...citiesCheckedCoord, value]);
   };
-
-  const getAllCities = () => {
-    const endpoints = createRequest();
-    Promise.all(endpoints)
-      .then((responses) => {
-        return Promise.all(
-          responses.map((response) => {
-            return response.json();
-          })
-        );
-      })
-      .then((data) => {
-        setCities(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
+  /* 
   useEffect(() => {
-    getAllCities();
-    const intervalId = setInterval(() => {
-      getAllCities();
-    }, 60000);
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
+    console.log(citiesCheckedCoord);
+  }); */
 
   return (
     <CitiesContext.Provider
       value={{
-        cities,
-        favouriteCities,
+        citiesCheckedCoord,
         addCity,
       }}
     >

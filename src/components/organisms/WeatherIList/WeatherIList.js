@@ -3,6 +3,7 @@ import WeatherItem from "components/molecules/WeatherItem/WeatherItem";
 import { WrapperList } from "./WeatherIList.styles";
 import { CitiesContext } from "providers/CitiesProvider";
 import { convertToCelsius } from "assets/utils/helpersFunction";
+
 const WeatherList = () => {
   const { favouriteCities } = useContext(CitiesContext);
 

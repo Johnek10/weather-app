@@ -1,21 +1,21 @@
-import React, { useContext } from "react";
-import AddButton from "components/atoms/AddButton/AddButton";
+import React, { useContext, useState, useEffect } from "react";
 import { Wrapper } from "./CityItem.styled";
-import { CitiesContext } from "providers/CitiesProvider";
-import { AddButtonStyle } from "components/atoms/AddButton/AddButton.styled";
-import { ReactComponent as AddIcon } from "assets/icons/Add_icon.svg";
+import CitiesProvider, { CitiesContext } from "providers/CitiesProvider";
 
-const CityItem = ({ name, country, temp, humidity, dt }) => {
+const CityItem = ({ name, country, handleClick }) => {
   const { addCity } = useContext(CitiesContext);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Wrapper>
+    <Wrapper
+      onClick={() => {
+        handleClick();
+        setIsOpen(!isOpen);
+      }}
+      isOpen={isOpen}
+    >
       <p>{name}</p>
       <p>{country}</p>
-      <AddButtonStyle
-        onClick={() => addCity({ name, country, temp, humidity, dt })}
-      >
-        <AddIcon />
-      </AddButtonStyle>
     </Wrapper>
   );
 };
